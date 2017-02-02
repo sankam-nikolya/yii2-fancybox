@@ -1,7 +1,7 @@
 {
     "name": "sankam/yii2-fancybox",
     "type": "yii2-extension",
-    "description": "FancyBox3 Widget for Yii framework",
+    "description": "FancyBox3 Widget for Yii2 framework",
     "keywords": ["yii2", "extension", "widget", "fancybox3"],
     "license": "GPL 3.0",
     "authors": [
