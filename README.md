@@ -10,12 +10,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer require "sankam/yii2-fancybox" "@dev"
+php composer require "sankam/yii2-fancybox" "*"
 ```
 or add
 
 ```json
-"sankam/yii2-fancybox" : "@dev"
+"sankam/yii2-fancybox" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
