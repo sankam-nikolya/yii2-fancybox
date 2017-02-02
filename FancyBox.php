@@ -37,10 +37,7 @@ class FancyBox extends Widget
     public function init()
     {
         parent::init();
-        if (!$this->target) {
-            throw new InvalidConfigException('The "target" property is required.');
-        }
-         if (!is_array($this->options)) {
+        if (!is_array($this->options)) {
             throw new InvalidConfigException('The "options" property must be an array');
         }
         foreach ($this->callbacks as $callbackName) {
@@ -66,6 +63,13 @@ class FancyBox extends Widget
         $view = $this->getView();
         FancyBoxAsset::register($view);
         
+        if(empty($this->target) && empty($this->options)) {
+            return;
+        }
+
+        if(empty($this->target)) {
+            $this->target = '[data-fancybox]';
+        }
         $config = !empty($this->options) ? Json::encode($this->options) : null;
         $view->registerJs("jQuery('{$this->target}').fancybox({$config});");
     }

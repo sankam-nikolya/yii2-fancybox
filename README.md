@@ -33,6 +33,15 @@ FancyBox::widget([
         'loop' => false,
         'padding' => 0,
         'margin' => [44, 0],
+        'caption' => new JsExpression("
+            function (instance) {
+                var ad = '<div class="ad"><p><a href="//fancyapps.com/fancybox/">fancyBox3</a> - touch enabled, responsive and fully customizable lightbox script</p></div>';
+                return ad + ( $(this).data('caption') || '' );
+
+            }
+        ")
+    ],
+    'callbacks' => [
         'onInit' => new JsExpression("
             function( instance ) {
                 instance.$refs.downloadButton = $('<a class="fancybox-button fancybox-download"></a>')

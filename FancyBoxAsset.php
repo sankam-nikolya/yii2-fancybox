@@ -19,7 +19,7 @@ class FancyBoxAsset extends AssetBundle
     ];
 
     public $js = [
-        YII_ENV_DEV ? jquery.fancybox.js' : jquery.fancybox.min.js'
+        YII_ENV_DEV ? 'jquery.fancybox.js' : 'jquery.fancybox.min.js'
     ];
 
     public $depends = [
