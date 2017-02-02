@@ -1,47 +1,16 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# phpstorm project files
+.idea
 
-# Folder config file
-Desktop.ini
+# netbeans project files
+nbproject
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# eclipse, zend studio, aptana or other eclipse like project files
+.buildpath
+.project
+.settings
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
+# mac DS_Store Files
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Thumbnails
-._*
+.lock
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
