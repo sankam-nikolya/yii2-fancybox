@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
  */
 class FancyBoxAsset extends AssetBundle
 {
-    public $sourcePath = '@sankam/fancybox/assets/dist/';
+    public $sourcePath = '@bower/fancybox/dist/';
 
     public $css = [
         YII_ENV_DEV ? 'jquery.fancybox.css' : 'jquery.fancybox.min.css'
